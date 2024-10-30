@@ -24,12 +24,10 @@ const Navbar = () => {
                 </NavLink>
                 <NavLink to="/services" className={linkClass}>
                   {" "}
-                  {/* Updated link */}
                   Services
                 </NavLink>
                 <NavLink to="/add-service" className={linkClass}>
                   {" "}
-                  {/* Updated link */}
                   Add Service
                 </NavLink>
               </div>
