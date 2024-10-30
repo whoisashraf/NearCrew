@@ -81,7 +81,7 @@ const EditLocalServicePage = ({ updateServiceSubmit }) => {
                 rows={4}
                 placeholder="Describe your main selling point"
                 required
-                value={description}
+                value={providerDescription}
                 onChange={(e) => setProviderDescription(e.target.value)}
               ></textarea>
             </div>
