@@ -10,8 +10,8 @@ const AddServiceProviderPage = ({ addServiceSubmit }) => {
   const [contactEmail, setContactEmail] = useState("");
   const [contactPhone, setContactPhone] = useState("");
   const [serviceProvided, setServiceProvided] = useState("");
-  const [serviceType, setServiceType] = useState(""); // New field for service type
-  const [priceRange, setPriceRange] = useState(""); // New field for price range
+  const [serviceType, setServiceType] = useState(""); 
+  const [priceRange, setPriceRange] = useState(""); 
 
   const navigate = useNavigate();
 

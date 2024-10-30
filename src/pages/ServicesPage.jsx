@@ -1,8 +1,7 @@
 import React from "react";
-import ServiceListings from "../components/ServiceListings"; // Updated import to reflect service listings
+import ServiceListings from "../components/ServiceListings";
 
 const ServicesPage = () => {
-  // Renamed component
   return (
     <section className="bg-blue-50 px-4 py-6">
       <ServiceListings />
@@ -10,4 +9,4 @@ const ServicesPage = () => {
   );
 };
 
-export default ServicesPage; // Renamed export
+export default ServicesPage; 

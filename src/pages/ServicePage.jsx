@@ -5,25 +5,24 @@ import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 
 const ServicePage = ({ deleteService }) => {
-  // Renamed the component and prop
   const navigate = useNavigate();
   const { id } = useParams();
   /** @type {any} */
-  const service = useLoaderData(); // Changed to 'service'
+  const service = useLoaderData(); 
 
   const onDeleteClick = (serviceId) => {
-    // Changed to 'serviceId'
+    
     const confirm = window.confirm(
       "Are you sure you want to delete this listing?"
     );
 
     if (!confirm) return;
 
-    deleteService(serviceId); // Changed to 'deleteService'
+    deleteService(serviceId); 
 
-    toast.success("Service deleted successfully"); // Changed to 'Service'
+    toast.success("Service deleted successfully");
 
-    navigate("/services"); // Changed to '/services'
+    navigate("/services"); 
   };
 
   return (
@@ -31,7 +30,7 @@ const ServicePage = ({ deleteService }) => {
       <section>
         <div className="container m-auto py-6 px-6">
           <Link
-            to="/services" // Changed to '/services'
+            to="/services" 
             className="text-teal-500 hover:text-teal-600 flex items-center"
           >
             <FaArrowLeft className="mr-2" /> Back to Service Listings
@@ -83,13 +82,13 @@ const ServicePage = ({ deleteService }) => {
               <div className="bg-white p-6 rounded-lg shadow-md mt-6">
                 <h3 className="text-xl font-bold mb-6">Manage Service</h3>
                 <Link
-                  to={`/edit-service/${service.id}`} // Changed to 'edit-service'
+                  to={`/edit-service/${service.id}`} 
                   className="bg-teal-500 hover:bg-teal-600 text-white text-center font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
                 >
                   Edit Service
                 </Link>
                 <button
-                  onClick={() => onDeleteClick(service.id)} // Changed to 'service.id'
+                  onClick={() => onDeleteClick(service.id)} 
                   className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
                 >
                   Delete Service
@@ -104,10 +103,9 @@ const ServicePage = ({ deleteService }) => {
 };
 
 const serviceLoader = async ({ params }) => {
-  // Renamed function
-  const res = await fetch(`/api/services/${params.id}`); // Changed to 'services'
+  const res = await fetch(`/api/services/${params.id}`); 
   const data = await res.json();
   return data;
 };
 
-export { ServicePage as default, serviceLoader }; // Renamed export
+export { ServicePage as default, serviceLoader }; 

@@ -18,7 +18,7 @@ const EditLocalServicePage = ({ updateServiceSubmit }) => {
     service.provider.contactPhone
   );
   const [serviceProvided, setServiceProvided] = useState(service.service);
-  const [serviceType, setServiceType] = useState(service.type); // New field for service type
+  const [serviceType, setServiceType] = useState(service.type); 
   const [priceRange, setPriceRange] = useState(service.priceRange);
 
   const navigate = useNavigate();

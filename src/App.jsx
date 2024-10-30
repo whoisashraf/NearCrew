@@ -7,46 +7,40 @@ import {
 } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
 import HomePage from "./pages/HomePage";
-import ServicesPage from "./pages/ServicesPage"; // Updated to ServicesPage
+import ServicesPage from "./pages/ServicesPage"; 
 import NotFoundPage from "./pages/NotFoundPage";
-import ServicePage, { serviceLoader } from "./pages/ServicePage"; // Updated to ServicePage
-import AddServicePage from "./pages/AddServicePage"; // Updated to AddServicePage
-import EditServicePage from "./pages/EditServicePage"; // Updated to EditServicePage
+import ServicePage, { serviceLoader } from "./pages/ServicePage"; 
+import AddServicePage from "./pages/AddServicePage"; 
+import EditServicePage from "./pages/EditServicePage"; 
 
 const App = () => {
-  // Add New Service
   const addService = async (newService) => {
     const res = await fetch("/api/services", {
-      // Updated API endpoint
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(newService),
     });
-    return res.json(); // Return the response data if needed
+    return res.json(); 
   };
 
-  // Delete Service
   const deleteService = async (id) => {
     const res = await fetch(`/api/services/${id}`, {
-      // Updated API endpoint
       method: "DELETE",
     });
-    return res.json(); // Return the response data if needed
+    return res.json(); 
   };
 
-  // Update Service
   const updateService = async (service) => {
     const res = await fetch(`/api/services/${service.id}`, {
-      // Updated API endpoint
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(service),
     });
-    return res.json(); // Return the response data if needed
+    return res.json(); 
   };
 
   const router = createBrowserRouter(
@@ -61,12 +55,12 @@ const App = () => {
         <Route
           path="/edit-service/:id"
           element={<EditServicePage updateServiceSubmit={updateService} />}
-          loader={serviceLoader} // Updated to serviceLoader
+          loader={serviceLoader} 
         />
         <Route
           path="/services/:id"
           element={<ServicePage deleteService={deleteService} />}
-          loader={serviceLoader} // Updated to serviceLoader
+          loader={serviceLoader} 
         />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
