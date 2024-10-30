@@ -1,0 +1,88 @@
+{
+  "services": [
+    {
+      "id": "1",
+      "service": "Catering Services",
+      "type": "Full-Service",
+      "description": "We provide comprehensive catering services for film and television productions, specializing in organic and locally sourced ingredients.",
+      "location": "Boston, MA",
+      "priceRange": "$2,000 - $5,000",
+      "provider": {
+        "name": "Gourmet Productions",
+        "description": "Gourmet Productions is a premier catering company focused on serving high-quality meals to film and television sets. Our chefs create customized menus to fit any production's needs.",
+        "contactEmail": "info@gourmetproductions.com",
+        "contactPhone": "555-123-4567"
+      }
+    },
+    {
+      "id": "2",
+      "service": "Equipment Rental",
+      "type": "Part-Service",
+      "description": "We offer a wide range of equipment rentals including generators, tents, and furniture for film sets and events.",
+      "location": "Miami, FL",
+      "priceRange": "$1,000 - $3,000",
+      "provider": {
+        "name": "Set Ready Rentals",
+        "description": "Set Ready Rentals provides all the essential equipment for film sets and events, ensuring a seamless production experience.",
+        "contactEmail": "info@setreadyrentals.com",
+        "contactPhone": "555-987-6543"
+      }
+    },
+    {
+      "id": "3",
+      "service": "Transportation Services",
+      "type": "Logistics",
+      "description": "Reliable transportation services for cast and crew during production shoots. We specialize in group transport solutions.",
+      "location": "Brooklyn, NY",
+      "priceRange": "$500 - $2,000",
+      "provider": {
+        "name": "On Set Transport",
+        "description": "On Set Transport offers dependable transportation for the film industry, making sure everyone arrives on time and in style.",
+        "contactEmail": "contact@onsettransport.com",
+        "contactPhone": "555-246-8101"
+      }
+    },
+    {
+      "id": "4",
+      "service": "Hair and Makeup Services",
+      "type": "Full-Service",
+      "description": "Professional hair and makeup artists available for on-set styling, ensuring your cast looks their best.",
+      "location": "Phoenix, AZ",
+      "priceRange": "$1,500 - $3,500",
+      "provider": {
+        "name": "Star Quality Styling",
+        "description": "Star Quality Styling is dedicated to providing top-notch hair and makeup services for productions of all sizes.",
+        "contactEmail": "info@starqualitystyling.com",
+        "contactPhone": "555-321-6549"
+      }
+    },
+    {
+      "id": "5",
+      "service": "Prop Rentals",
+      "type": "Part-Service",
+      "description": "Extensive selection of props for rent, suitable for various film genres and themes.",
+      "location": "Atlanta, GA",
+      "priceRange": "$500 - $2,500",
+      "provider": {
+        "name": "Props R Us",
+        "description": "Props R Us specializes in providing a diverse range of props to enhance film sets, ensuring authenticity and creativity.",
+        "contactEmail": "contact@propsrus.com",
+        "contactPhone": "555-654-3210"
+      }
+    },
+    {
+      "id": "6",
+      "service": "Set Design Services",
+      "type": "Creative Services",
+      "description": "Creative set design for film and television, tailored to the specific vision of each production.",
+      "location": "Portland, OR",
+      "priceRange": "$3,000 - $10,000",
+      "provider": {
+        "name": "Creative Set Solutions",
+        "description": "Creative Set Solutions offers innovative set design services to bring your production's vision to life.",
+        "contactEmail": "info@creativesetsolutions.com",
+        "contactPhone": "555-789-0123"
+      }
+    }
+  ]
+}
